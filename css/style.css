@@ -1,7 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap');
 
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
 body { 
     font-family: 'Inter', sans-serif;
 }
 
+header {
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1rem;
+    
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+}
+
+#contact_btn {
+    background-color: #e6bd43;
+    padding: 0.5rem;
+    
+}
+
+main {
+    text-align: center;
+}

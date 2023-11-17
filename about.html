@@ -14,22 +14,24 @@
 <body>
     <div id="grid-container">
         <header>
-            <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" id="logo1"></a>
-            </span>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="products.html">Portfolio</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="about.html#contact_us">Contact</a></li>
-            </ul>
+            <nav>
+                <span>
+                    <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                </span>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="products.html">Portfolio</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="about.html#contact_us">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <section>
                 <h6>Company name</h6>
                 <h3>About Our Company</h3>
                 <p>Aliquam et auctor justo. Duis sit amet libero eleifend, suscipit arcu a, vulputate libero. Mauris non sem commodo metus imperdiet finibus ac eu purus. Nullam ornare ultrices nisi at gravida. Nullam ut nibh vel metus sagittis rhoncus sed sit amet ante. Phasellus ultricies orci vitae dolor facilisis, sollicitudin rutrum massa lacinia. Aliquam lobortis, lectus a convallis aliquam, nisl mi malesuada nunc, eget vestibulum diam libero in nulla. Aenean non mauris congue augue auctor suscipit eget sit amet diam. Nunc eleifend porta purus vel varius. Cras tincidunt nibh dui, at tempus est commodo in. Sed quis ex finibus, pharetra odio vel, imperdiet dui. Duis tempus purus eu velit ultrices, quis consequat nisi sagittis.</p>
-                <a href="#contact_us"><button>Get in touch with us</button></a>
+                <a href="#contact_us">Get in touch with us</a>
             </section>
             <section id="our_services">
                 <h2>Our services</h2>
@@ -68,46 +70,37 @@
                         Name
                         <input type="text" name="name" placeholder="Ola Nordmann..">
                     </label>
-                    <label for="">
+                    <label for="subject">
                         Subject
-                        <input type="text" name="" placeholder="Branding..">
+                        <input type="text" name="subject" placeholder="Branding..">
                     </label>
-                    <label for="">
+                    <label for="message">
                         Message
-                        <input type="text" name="" placeholder="">
+                        <input type="text" name="message" placeholder="">
                     </label>
                 </form>
-                <h5>Contact information</h5>
-                <p>raesent condimentum porttitor erat, vitae aliquam erat euismod tempus. Vivamus nulla quam, consectetur ut risus sed, feugiat sollicitudin odio. Maecenas venenatis nibh ut risus dapibus, ac convallis dolor finibus.</p>
-                <article>
+                <section>
+                    <h5>Contact information</h5>
+                    <p>raesent condimentum porttitor erat, vitae aliquam erat euismod tempus. Vivamus nulla quam, consectetur ut risus sed, feugiat sollicitudin odio. Maecenas venenatis nibh ut risus dapibus, ac convallis dolor finibus.</p>
                     <i class="fa-solid fa-location-pin"></i>
                     <p> B R A Veien 4, 1757 Halden</p>
-                </article>
-                <article>
                     <i class="fa-solid fa-phone"></i>
                     <p> 69 60 80 00</p>
-                </article>
-                <article>
                     <i class="fa-solid fa-envelope"></i>
                     <p><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
                     <!--Se kilde 1 i dokument-->
-                </article>
-            </section>
-            <section id="googlemaps">
+                </section>
+            <div id="googlemaps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d261723.48028792796!2d10.812090673285342!3d59.17062639022529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700145673874!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!--Fikk kode av googlemaps-->
-            </section>
+            </div>
         </main>
         <footer>
-            <section>
+            <section id="footer"></section>
                 <span>
-                    <a href="index.html"><img src="img/logo1.png" alt="header logo" id="logo1"></a>
+                    <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
                 </span>
-            </section>
-            <section>
                 <h5>Companyrights Companyname 2023</h5>
-            </section>
-            <section id="social-icons">
                 <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
