@@ -10,6 +10,7 @@
 body { 
     font-family: 'Inter', sans-serif;
     margin: 0 0 0 0;
+    max-width: 1600px;
 }
 
 nav span img {
@@ -249,3 +250,77 @@ footer img {
     transform: translate(-50%, -50%);
 }
 */
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #e6bd43;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#clients h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#clients img {
+    height: 100px;
+    width: 100px;
+    padding: 1rem;
+}
+
+#contact_us {
+    background-color: #efefef;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#contact_us h2 {
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+}
+
+#contact_us h5 {
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    width: 100%;
+}
+
+#contact_us form {
+    padding: 2rem;
+}
+
+#inputfelt input {
+    display: flex;
+    border: none;
+    padding: 1rem;
+}
+
+#name {
+    display: flex;
+    border: none;
+    max-width: 480px;
+    height: 40px;
+}
+
+#subject {
+    display: flex;
+    border: none;
+    max-width: 480px;
+    height: 40px;
+}
+
+#message {
+    display: flex;
+    border: none;
+    max-width: 480px;
+    height: 40px;
+}
+
