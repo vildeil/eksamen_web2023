@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap');
 
+/*CSS for index.html*/
 #grid-container {
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -152,7 +153,7 @@ footer h5 {
     padding: 0.5rem;
 }
 
-#social-icons a i {
+.social-icons i {
     color: white;
     font-size: 30px;
     padding: 0.5rem;
@@ -162,3 +163,89 @@ footer img {
     height: 100px;
     width: 100px;
 }
+
+/*CSS for products.html*/
+
+#background_portfolio {
+    width: 100%;
+    padding: 1rem 0 0 0;
+    position: relative;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#portfolio h1 {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#previous-jobs {
+    padding: 2rem 0 2rem;
+}
+
+.previous-jobs_shortcut {
+    text-decoration: none;
+    color: #252525;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #252525;
+    padding: 0.5rem;
+}
+
+#previous-jobs h2 {
+    border-style: solid;
+    border-width: 0 0 medium 0;
+    border-color:  #e6bd43;
+    margin: 2rem;
+}
+
+#branding h2{
+    border-style: solid;
+    border-width: 0 0 medium 0;
+    border-color:  #e6bd43;
+    margin: 2rem;
+}
+
+#design h2 {
+    border-style: solid;
+    border-width: 0 0 medium 0;
+    border-color:  #e6bd43;
+    margin: 2rem;
+}
+
+#developement h2 {
+    border-style: solid;
+    border-width: 0 0 medium 0;
+    border-color:  #e6bd43;
+    margin: 2rem;
+}
+
+.artikkelkort {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    min-width: 200px;
+}
+
+/*CSS for about.html*/
+
+#header_about img {
+    width: 100%;
+    padding: 1rem 0 0 0;
+    position: relative;
+    text-align: center;
+}
+
+#text_background {
+    background: rgba(198, 201, 198, 0.3);
+}
+
+/*#text_background {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
