@@ -45,44 +45,17 @@ nav a{
     font-weight: 900;
     text-decoration: none;
     color: #000;
+    margin: 1rem;
 }
 
 #header-background {
-    width: 100%;
-    padding: 1rem 0 0 0;
-    position: relative;
-    text-align: center;
-}
-
-#header-background img {
-    width: 100%;
-    opacity: 0.6;
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
 }
 
 #header_text {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#header_text_middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#header_btn {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: auto;
-}
-
-main {
-    position: relative;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(208, 213, 209, 0.6);
 }
 
 #subheading {
@@ -195,22 +168,19 @@ footer img {
 
 /*CSS for products.html*/
 
-#background_portfolio {
-    width: 100%;
-    padding: 1rem 0 0 0;
-    position: relative;
-    text-align: center;
-    opacity: 0.6;
+#portfolio {
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
 }
 
 #portfolio h1 {
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 5rem;
+    text-align: center;
+    background: rgba(208, 213, 209, 0.6);
 }
 
 #previous-jobs {
+    display: flex;
+    flex-wrap: wrap;
     padding: 2rem 0 2rem;
 }
 
@@ -221,6 +191,15 @@ footer img {
     border-width: 2px;
     border-color: #252525;
     padding: 0.5rem;
+    margin: 1rem;;
+}
+
+.art_img {
+    display: flex;
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 #previous-jobs h2 {
@@ -228,6 +207,12 @@ footer img {
     border-width: 0 0 medium 0;
     border-color:  #e6bd43;
     margin: 2rem;
+    width: 100%;
+}
+
+#branding {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #branding h2{
@@ -235,6 +220,12 @@ footer img {
     border-width: 0 0 medium 0;
     border-color:  #e6bd43;
     margin: 2rem;
+    width: 100%;
+}
+
+#design {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #design h2 {
@@ -242,6 +233,12 @@ footer img {
     border-width: 0 0 medium 0;
     border-color:  #e6bd43;
     margin: 2rem;
+    width: 100%;
+}
+
+#developement {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #developement h2 {
@@ -249,35 +246,34 @@ footer img {
     border-width: 0 0 medium 0;
     border-color:  #e6bd43;
     margin: 2rem;
+    width: 100%;
 }
 
 .artikkelkort {
     display: flex;
     flex-wrap: wrap;
-    max-width: 350px;
-    min-width: 200px;
+    flex-grow: 692px;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.artikkelkort h3 {
+    width: 100%;
 }
 
 /*CSS for about.html*/
 
-#header_about img {
-    width: 100%;
-    padding: 1rem 0 0 0;
-    position: relative;
-    text-align: center;
+
+#header_about {
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+    padding: 0.5rem;
 }
 
 #text_background {
-    background: rgba(198, 201, 198, 0.3);
+    background: rgba(251, 255, 251, 0.68);
+    padding: 2rem;
+    margin: 2rem;
 }
-
-/*#text_background {
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
 
 #clients {
     display: flex;
@@ -357,10 +353,11 @@ footer img {
     height: 240px;
 }
 
-#contact_us p {
+#contact_information {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 1rem;
 }
+
 
