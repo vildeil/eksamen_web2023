@@ -45,7 +45,6 @@ nav a{
     font-weight: 900;
     text-decoration: none;
     color: #000;
-    margin: 1rem;
 }
 
 #header-background {
@@ -332,6 +331,7 @@ footer img {
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
+    flex-direction: column;
 }
 
 #inputfelt input {
@@ -484,5 +484,22 @@ footer img {
     #developement_img2 {
         flex-grow: 2;
         flex-basis: auto;
+    }
+
+    #contact_us {
+        display: flex;
+    }
+
+    #contact_us article {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #contact_us form {
+        flex-direction: column;
+        align-content: center;
     }
 }
