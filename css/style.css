@@ -50,6 +50,7 @@ nav a{
 
 #header-background {
     background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+    background-size: cover;
 }
 
 #header_text {
@@ -170,6 +171,7 @@ footer img {
 
 #portfolio {
     background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+    background-size: cover;
 }
 
 #portfolio h1 {
@@ -252,7 +254,6 @@ footer img {
 .artikkelkort {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 692px;
     padding: 1rem;
     margin: 1.5rem;
 }
@@ -267,6 +268,7 @@ footer img {
 #header_about {
     background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
     padding: 0.5rem;
+    background-size: cover;
 }
 
 #text_background {
@@ -302,6 +304,12 @@ footer img {
     display: flex;
     flex-wrap: wrap;
 }
+
+#contact_us article {
+    display: flex;
+    flex-direction: column;
+}
+
 
 #contact_us h2 {
     display: flex;
@@ -353,10 +361,19 @@ footer img {
     height: 240px;
 }
 
-#contact_information {
+#information {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
+}
+
+.contact_information {
+    align-items: center;
+    display: flex;
+}
+
+#contact_us i {
     padding: 1rem;
 }
 
@@ -364,7 +381,7 @@ footer img {
     width: 100%;
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:520px) {
 
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -412,5 +429,60 @@ footer img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    }
+
+    #services article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        width: 20%;
+        padding: 1.5rem;
+    }
+
+    .art_img {
+        width: 100%;
+        max-width: 692px;
+    }
+
+    #branding_img1 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+
+    #branding_img2 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    #branding_img3 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    #branding_img4 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+
+    #design_img1 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    #design_img2 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    #design_img3 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+
+    #developement_img1 {
+        flex-grow: 2;
+        flex-basis: auto;
+    }
+
+    #developement_img2 {
+        flex-grow: 2;
+        flex-basis: auto;
     }
 }
