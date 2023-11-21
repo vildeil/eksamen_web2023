@@ -13,7 +13,7 @@ body {
     max-width: 1600px;
 }
 
-nav span img {
+span img {
     height: 100px;
     width: 100px;
     padding: 1rem 0 0 0;
@@ -360,4 +360,57 @@ footer img {
     padding: 1rem;
 }
 
+#googlemaps {
+    width: 100%;
+}
 
+@media only screen and (min-width:600px) {
+
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    main {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+    }
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #nav_btn {
+        margin: 0;
+    }
+
+    footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
