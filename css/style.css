@@ -34,7 +34,7 @@ header nav span a{
 
 nav a{
     text-decoration: none;
-    color: #000;
+    color: #252525;
     padding: 0.5rem;
     display: inline-block;
 }
@@ -48,11 +48,12 @@ nav a{
     padding: 0.5rem;
     font-weight: 900;
     text-decoration: none;
-    color: #000;
+    color: #252525;
 }
 
 #header-background {
     background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+    /*Bilde hentet fra pixabay.com (se kilde 5 i dokument)*/
     background-size: cover;
 }
 
@@ -81,16 +82,14 @@ nav a{
 
 #about p {
     padding: 0.5rem;
-    text-align: justify;
 }
 
 #readmore_btn {
     text-decoration: none;
-    color: #000;
+    color: #252525;
     border-style: solid ;
-    border-color: #000;
+    border-color: #252525;
     padding: 0.5rem;
-    max-width: 160px;
 }
 
 #services {
@@ -178,6 +177,7 @@ footer img {
 
 #portfolio {
     background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+    /*Bilde hentet fra pixabay.com (se kilde 5 i dokument)*/
     background-size: cover;
 }
 
@@ -282,9 +282,9 @@ footer img {
 
 /*CSS for about.html*/
 
-
 #header_about {
     background-image: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+    /*Bilde hentet fra pixabay.com (se kilde 5 i dokument)*/
     padding: 0.5rem;
     background-size: cover;
     display: flex;
@@ -420,6 +420,7 @@ footer img {
 
 #googlemaps {
     width: 100%;
+    height: 350px;
 }
 
 @media only screen and (min-width:520px) {
@@ -490,11 +491,6 @@ footer img {
         max-width: 692px;
     }
 
-    /*.artikkelkort {
-        max-width: 692px;
-        min-width: 200px;
-    }*/
-
     #branding {
         flex-direction: row;
         justify-content: center;
@@ -558,7 +554,8 @@ footer img {
     #developement_img2 {
         flex-grow: 2;
         flex-basis: auto;
-    }
+    } 
+    /*Se kilde 3 i dokument*/
 
     #contact_us {
         display: flex;
@@ -607,4 +604,26 @@ footer img {
     #text_background {
         width: 50%;
     }
+
+    .hover:hover {
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    #readmore_btn:hover {
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    .hover_zoom:hover {
+        transition: 2s;
+        transform: scale(1.1);
+    } /*Se kilde 2 i dokument*/
+
+    .active {
+        text-decoration-line: underline;
+        text-decoration-color: #e6bd43;
+        text-decoration-thickness: 3px;
+        font-weight: bold;
+    } 
 }
