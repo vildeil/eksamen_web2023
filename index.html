@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vilde Ludvigsen">
+    <meta name="description" content="Forsiden for nettsiden til bedriften">
+    <meta property="og:title" content="Sjekk ut bedriften vår!">
+    <meta property="og:url" content="file:///Users/vildeludvigsen/Documents/GitHub/eksamen_web2023/index.html">
+    <!--Se antagelser i dokument-->
+    <meta property="og:description" content="Sjekk ut hva vil tilbyr og våre tidligere arbeid!">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg">
     <link href="css/icons/css/fontawesome.css" rel="stylesheet">
     <link href="css/icons/css/brands.css" rel="stylesheet">
     <link href="css/icons/css/solid.css" rel="stylesheet">
@@ -15,14 +22,14 @@
     <div id="grid-container">
         <header>
             <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logo" class="logo1" aria-label="Bli tatt til forsiden"></a>
             </span>
             <nav>
                 <ul>
-                    <li> <a class="active" href="index.html">Home</a></li>
-                    <li> <a href="products.html">Portfolio</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a class="btn hover" id="nav_btn" href="about.html#contact_us">Contact</a></li>
+                    <li> <a class="active" href="index.html" aria-label="Bli tatt til forsiden">Home</a></li>
+                    <li> <a href="products.html" aria-label="Bli tatt til portfolioside">Portfolio</a></li>
+                    <li> <a href="about.html" aria-label="Bli tatt til about siden">About</a></li>
+                    <li> <a class="btn hover" id="nav_btn" href="about.html#contact_us" aria-label="Bli tatt til Contact us seksjonen på about siden">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +38,7 @@
                 <div id="header_text">
                     <h1>Compeling headline</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                    <a class="btn hover" id="header_btn" href="#services">Read more about our services</a>
+                    <a class="btn hover" id="header_btn" href="#services" aria-label="Bli tatt til our services seksjonen">Read more about our services</a>
                 </div>
             </section>
             <section id="subheading">
@@ -47,7 +54,7 @@
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
                         you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
                     </p>
-                    <a id="readmore_btn" href="about.html">Read more about us</a>
+                    <a class="hover" id="readmore_btn" href="about.html" aria-label="Bli tatt til about siden">Read more about us</a>
                 </article>
             </section>
             <section id="services">
@@ -75,19 +82,20 @@
             </section>
             <section id="newsletter">
                 <h2>Sign up for our newsletter</h2>
-                <input type="email" placeholder="eksempel@email.com" title="">
+                <input type="email" placeholder="eksempel@email.com" >
                 <input class="sumbit_btn hover" type="submit" value="Sign me up!">
             </section>
         </main>
         <footer>
             <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logo" class="logo1" aria-label="Bli tatt til forsiden"></a>
+                <!--Annser img-tag med logo som innhold, fordi logo er et symbol for en bedrift eller organisasjon, den har også funksjon-->
             </span>
             <h5>Companyrights Companyname 2023</h5>
             <div>
-                <a href="https://www.facebook.com" class="social-icons"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/" class="social-icons"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://no.linkedin.com/" class="social-icons"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class="social-icons" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="social-icons" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://no.linkedin.com/" class="social-icons"><i title="Linkedin" class="fa-brands fa-linkedin"></i></a>
             </div>
         </footer>
     </div>

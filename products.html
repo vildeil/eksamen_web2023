@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vilde Ludvigsen">
+    <meta name="description" content="Portfolio siden for bedriften">
+    <meta property="og:title" content="Våre tidligere arbeid">
+    <meta property="og:url" content="file:///Users/vildeludvigsen/Documents/GitHub/eksamen_web2023/index.html">
+    <!--Se antagelser i dokument-->
+    <meta property="og:description" content="Sjekk ut hva vi har gjort tidligere!">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg">
     <link href="css/icons/css/fontawesome.css" rel="stylesheet">
     <link href="css/icons/css/brands.css" rel="stylesheet">
     <link href="css/icons/css/solid.css" rel="stylesheet">
@@ -15,14 +22,14 @@
     <div id="grid-container">
         <header>
             <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logo" class="logo1" aria-label="Bli tatt til forsiden"></a>
             </span>
             <nav>
                 <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a class="active" href="products.html">Portfolio</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a class="btn hover" id="nav_btn" href="about.html#contact_us">Contact</a></li>
+                    <li> <a href="index.html" aria-label="Bli tatt til forsiden">Home</a></li>
+                    <li> <a class="active" href="products.html" aria-label="Bli tatt til portfolioside">Portfolio</a></li>
+                    <li> <a href="about.html" aria-label="Bli tatt til about siden">About</a></li>
+                    <li> <a class="btn hover" id="nav_btn" href="about.html#contact_us" aria-label="Bli tatt til Contact us seksjonen på about siden">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,65 +39,66 @@
             </section>
             <section id="previous-jobs">
                 <h2>Explore previous jobs</h2>
-                <a href="#branding" class="previous-jobs_shortcut hover">Branding</a>
-                <a href="#design" class="previous-jobs_shortcut hover">Design</a>
-                <a href="#developement" class="previous-jobs_shortcut hover">Development</a>
+                <a href="#branding" class="previous-jobs_shortcut hover" aria-label="Bli tatt til seksjonen for branding">Branding</a>
+                <a href="#design" class="previous-jobs_shortcut hover" aria-label="Bli tatt til seksjonen for design">Design</a>
+                <a href="#developement" class="previous-jobs_shortcut hover" aria-label="Bli tatt til seksjonen for developement">Development</a>
             </section>
             <section id="branding">
                 <h2>Branding</h2>
                 <article class="artikkelkort" id="branding_img1">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
                 <article class="artikkelkort" id="branding_img2">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
                 <article class="artikkelkort" id="branding_img3">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
                 <article class="artikkelkort" id="branding_img4">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
             </section>
             <section id="design">
                 <h2>Design</h2>
                 <article class="artikkelkort" id="design_img1">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
                 <article class="artikkelkort" id="design_img2">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
                 <article class="artikkelkort" id="design_img3">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
             </section>
             <section id="developement">
                 <h2>Development</h2>
                 <article class="artikkelkort" id="developement_img1">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
                 <article class="artikkelkort" id="developement_img2">
-                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold.">
+                    <img class="art_img hover_zoom" src="https://placehold.co/400" alt="400x400 placeholder bilde fra placehold."><!--Innhold-->
                     <h3>Aenean eu pulvinar ante</h3>
                 </article>
             </section>
         </main>
         <footer>
             <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logo" class="logo1" aria-label="Bli tatt til forsiden"></a>
+                <!--Annser img-tag med logo som innhold, fordi logo er et symbol for en bedrift eller organisasjon, den har også en funksjon-->
             </span>
             <h5>Companyrights Companyname 2023</h5>
             <article>
-                <a href="https://www.facebook.com" class="social-icons"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/" class="social-icons"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://no.linkedin.com/" class="social-icons"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class="social-icons" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="social-icons" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://no.linkedin.com/" class="social-icons" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
             </article>
         </footer>
     </div>

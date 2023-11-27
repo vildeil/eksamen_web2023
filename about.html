@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vilde Ludvigsen">
+    <meta name="description" content="About side for bedriften">
+    <meta property="og:title" content="Les om vår bedrift">
+    <meta property="og:url" content="file:///Users/vildeludvigsen/Documents/GitHub/eksamen_web2023/index.html">
+    <!--Se antagelser i dokument-->
+    <meta property="og:description" content="Les mer om vår bedrift og hva vi kan tilby! ">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg">
     <link href="css/icons/css/fontawesome.css" rel="stylesheet">
     <link href="css/icons/css/brands.css" rel="stylesheet">
     <link href="css/icons/css/solid.css" rel="stylesheet">
@@ -15,14 +22,14 @@
     <div id="grid-container">
         <header>
             <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logo" class="logo1" aria-label="Bli tatt til forsiden"></a>
             </span>
             <nav>
                 <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="products.html">Portfolio</a></li>
-                    <li> <a class="active" href="about.html">About</a></li>
-                    <li> <a class="btn hover" id="nav_btn" href="about.html#contact_us">Contact</a></li>
+                    <li> <a href="index.html" aria-label="Bli tatt til forsiden">Home</a></li>
+                    <li> <a href="products.html" aria-label="Bli tatt til portfolioside">Portfolio</a></li>
+                    <li> <a class="active" href="about.html" aria-label="Bli tatt til about siden">About</a></li>
+                    <li> <a class="btn hover" id="nav_btn" href="about.html#contact_us" aria-label="Bli tatt til Contact us seksjonen på about siden">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,7 +39,7 @@
                     <h6>Company name</h6>
                     <h3>About Our Company</h3>
                     <p>Aliquam et auctor justo. Duis sit amet libero eleifend, suscipit arcu a, vulputate libero. Mauris non sem commodo metus imperdiet finibus ac eu purus. Nullam ornare ultrices nisi at gravida. Nullam ut nibh vel metus sagittis rhoncus sed sit amet ante. Phasellus ultricies orci vitae dolor facilisis, sollicitudin rutrum massa lacinia. Aliquam lobortis, lectus a convallis aliquam, nisl mi malesuada nunc, eget vestibulum diam libero in nulla. Aenean non mauris congue augue auctor suscipit eget sit amet diam. Nunc eleifend porta purus vel varius. Cras tincidunt nibh dui, at tempus est commodo in. Sed quis ex finibus, pharetra odio vel, imperdiet dui.</p>
-                    <a href="#contact_us" class="btn hover">Get in touch with us</a>
+                    <a href="#contact_us" class="btn hover" aria-label="Bli tatt til contact us seksjonen">Get in touch with us</a>
                 </article>
             </section>
             <section id="services">
@@ -60,27 +67,21 @@
             </section>
             <section id="clients">
                 <h2>Some of our clients</h2>
-                <img src="img/logo1.png" alt="">
-                <img src="img/logo2.png" alt="">
-                <img src="img/logo3.png" alt="">
+                <img src="img/logo1.png" alt="Bilde av logo">
+                <img src="img/logo2.png" alt="Bilde av logo">
+                <img src="img/logo3.png" alt="Bilde av logo">
             </section>
             <section id="contact_us">
                 <h2>Contact us</h2>
                 <article> 
                     <h5>Send us a message</h5>
                     <form>
-                        <label for="name">
-                        <p>Name</p>
-                            <input id="name" type="text" name="name" placeholder="Ola Nordmann..">
-                        </label>
-                        <label for="subject">
-                        <p>Subject</p>
-                            <input id="subject" type="text" name="subject" placeholder="Branding..">
-                        </label>
-                        <label for="message">
-                        <p>Message</p>
-                            <textarea id="message" name="message" rows="4" cols="50"></textarea>
-                        </label>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" placeholder="Ola Nordmann..">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" name="subject" placeholder="Branding..">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
                         <input class="sumbit_btn hover" type="submit" value="Send message">
                     </form> <!--Se kilde 4 i dokument-->
                 </article> 
@@ -89,15 +90,15 @@
                     <p id="information">Raesent condimentum porttitor erat, vitae aliquam erat euismod tempus. Vivamus nulla quam, consectetur ut risus sed, feugiat sollicitudin odio. Maecenas venenatis nibh ut risus dapibus, ac convallis dolor finibus.</p>
                     <div class="contact_information">
                         <i class="fa-solid fa-location-pin"></i>
-                        <p>B R A Veien 4, 1757 Halden</p>
+                        <p title="Address">B R A Veien 4, 1757 Halden</p>
                     </div>
                     <div class="contact_information">
                         <i class="fa-solid fa-phone"></i>
-                        <p>69 60 80 00</p>
+                        <p title="Phone number">69 60 80 00</p>
                     </div>
                     <div class="contact_information"> 
                         <i class="fa-solid fa-envelope"></i>
-                        <p><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
+                        <p title="Email address"><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
                         <!--Se kilde 1 i dokument-->
                     </div>
                 </article>
@@ -109,13 +110,14 @@
         </main>
         <footer>
             <span>
-                <a href="index.html"><img src="img/logo1.png" alt="header logo" class="logo1"></a>
+                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logo" class="logo1" aria-label="Bli tatt til forsiden"></a>
+                <!--Annser img-tag med logo som innhold, fordi logo er et symbol for en bedrift eller organisasjon, den har også en funksjon-->
             </span>
             <h5>Companyrights Companyname 2023</h5>
             <article>
-                <a href="https://www.facebook.com" class="social-icons"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/" class="social-icons"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://no.linkedin.com/" class="social-icons"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class="social-icons" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="social-icons" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://no.linkedin.com/" class="social-icons" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
             </article>
         </footer>
     </div>
